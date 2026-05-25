@@ -1,6 +1,7 @@
 //resources
 //  - https://github.com/UMSIComplexWebDesign/practice3 (used my answers to the prectice exam for questions 3, 4, assistance with 5)
 //  - https://www.w3schools.com/css/css_background_image.asp (used to remember the backgroundImage attribute for question 7)
+//  - https://docs.google.com/presentation/d/13dim5jpkIFin-CE2pk0U2T_GUjNf5RSikwpFIbpX1SI/edit?slide=id.p28#slide=id.p28 (JavaScript slides for class to remember how to do a loop in Javascript for question 8)
 
 // Part 3 Question 3
 window.addEventListener("load",function(){
@@ -36,4 +37,18 @@ document.querySelector(".style2").addEventListener("focus",function(){
 
 
 // Part 3 Question 8
+window.addEventListener("load",function(){
+     console.log("question 8");
+     //add the necessary javascript to add the necessary attributes to the HTML tags for the images for lightbox 2
+
+     // Get ALL elements with class "card"
+    const lightboxLinks = document.querySelectorAll(".partA a");
+
+    // Loop through every one
+    lightboxLinks.forEach(function (lightboxLink) {
+        lightboxLink.setAttribute("data-lightbox", "gallery");
+    });
+
+ });
+
 
