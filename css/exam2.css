@@ -1,15 +1,25 @@
 /* YOUR CSS MUST GO HERE */
 /* There will be deductions for uncessary extra code. */
 
+.partA{
+    display: grid;
+    grid-template-columns: 45% 45%;
+}
+
+.partA img{
+    width: 100%;
+}
 
 
 
 
 
 
-
-
-
+@media screen and (min-width: 750px){
+    .partA{
+        grid-template-columns: 30% 30% 30%;
+    }
+}
 
 
 
